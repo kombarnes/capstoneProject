@@ -23,11 +23,21 @@ const attractionSchema = new Schema({
 
 const locationSchema = new Schema({
     location: {
-        address: ,
-        city: String,
-        state: String,
-        zipcode:
+        type: String
+    },
+    address: {
+        type: String
+        },
+    city: {
+        type: String
+    },
+    state: {
+        type: String
+    },
+    zipcode: {
+        type: String
     }
+    
 });
 
 const Attraction = mongoose.model('Attraction', attractionSchema);
