@@ -1,11 +1,16 @@
 import React from 'react'
+import { Card, Button } from 'react-bootstrap';
 
 const Attractions = () => {
+
   return (
-    <div>
-    <h4 className="center">Attractions</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur eligendi eum? Consequuntur, nemo quae.</p>
-    </div>
+      <div>
+        <h1 className="center">Visit Cincinnati!</h1>
+        <br />
+        <h5 className='center'>Are you on a family vacation? Maybe you just need time to get away. Our city has options for everyone! How would you like to plan your trip?</h5>
+        <h1 className='center'>Restaurants</h1>
+        
+      </div>
   )
 }
 
