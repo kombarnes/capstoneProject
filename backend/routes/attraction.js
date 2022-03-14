@@ -3,21 +3,19 @@ let Attraction = require('../models/attraction.model');
 
 router.route('/').get((req, res) => {
     Attraction.find()
-        .then(attractions => res.json(attractions))
-        .catch(err => res.status(400).json('Error: ' + err));
+    .then(attractions => res.json(attractions))
+    .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/add').post((req, res) => {
     const name = req.body.name;
     const imageUrl = req.body.imageUrl;
     const description = req.body.description;
-    // const location = req.body.location;
 
-    const newAttraction = new Attraction({
+    const newAttraction = new Attraction ({
         name,
         imageUrl,
         description,
-        // location,
     });
 
     newAttraction.save()
@@ -25,11 +23,10 @@ router.route('/add').post((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-//router
 router.route('/:id').get((req, res) => {
     Attraction.findById(req.params.id)
-        .then(attraction => res.json(attraction))
-        .catch(err => res.status(400).json('Error: ' + err));
+    .then(attraction => res.json(attraction))
+    .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/:id').delete((req, res) => {
@@ -38,19 +35,18 @@ router.route('/:id').delete((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-router.route('/uplocation/:id').post((req, res) => {
+router.route('/update/:id').post((req, res) => {
     Attraction.findById(req.params.id)
-    .then(Attraction => {
+    .then(attraction => {
         attraction.name = req.body.name;
         attraction.imageUrl = req.body.imageUrl;
         attraction.description = req.body.description;
-        // attraction.location = req.body.location;
 
-        Attraction.save()
-        .then(() => res.json('Attraction uplocationd!'))
+        attraction.save()
+        .then(() => res.json('Attraction updated!'))
         .catch(err => res.status(400).json('Error: ' + err));
     })
-    .catch(err => res.status(400).json('Error ' + err));
+    .catch(err => res.status(400).json('Error: ' + err));
 });
 
 module.exports = router;
