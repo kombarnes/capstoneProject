@@ -1,0 +1,10 @@
+.img1, .img2 {
+    height: 350px;
+    border-radius: 50px;
+    display: inline;
+}
+
+
+.center {
+    color: red;
+}
