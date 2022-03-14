@@ -23,6 +23,9 @@ connection.once('open', () => {
 
 })
 
+const attractionRouter = require('./routes/attraction');
+
+app.use('/attractions', attractionRouter)
 
 //starts the server
 app.listen(port, () => {
