@@ -16,9 +16,30 @@ code {
 }
 
 footer {
-
-  position: fixed;
   left: 0px;
   bottom: 0px;
   width: 100%;
+}
+
+.contact-image{
+  min-width: 1300px;
+  max-height: 350px;
+  margin-top: 80px;
+  border-radius: 50px;
+}
+
+.margin-footer{
+  margin-top: 100px;
+}
+
+.margin-contact{
+  margin-top: 100px;
+}
+
+.margin-icon{
+  margin-top: 50px;
+}
+
+.contact-center{
+ text-align: center;
 }

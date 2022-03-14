@@ -5,7 +5,7 @@ const Attractions = () => {
 
   const cardInfo = [
     {image: '', title: 'Boomtown Biscuits & Whiskey', text: '1201 Broadway Cincinnati, OH 45202'},
-    {image: '', title: 'blaCk Coffee lounge', text: '824 Elm St Cincinnati, OH 45202'},
+    {image: '', title: 'Black Coffee lounge', text: '824 Elm St Cincinnati, OH 45202'},
     {image: '', title: 'OTR Bagel Bar', text: '107 W Elder St Cincinnati, OH 45202'},
     {image: '', title: '', text: ''},
   ];
@@ -13,7 +13,7 @@ const Attractions = () => {
   const renderCard = (card, index) => {
     return (
       <Card style={{ width: '18rem' }} key={index}>
-          <Card.Img variant="top" src="holder.js/100px180" src={card.image} />
+          <Card.Img variant="top" src="holder.js/100px180"/>
           <Card.Body>
             <Card.Title>{card.title}</Card.Title>
             <Card.Text>
