@@ -24,10 +24,10 @@ connection.once('open', () => {
 })
 
 //loads the routers from other files
-const attractionsRouter = require('./routes/attractions');
+const attractionsRouter = require('./routes/attraction');
 
 //middleware
-app.use('/attractions', attractionsRouter);
+app.use('/attractions', attractionRouter);
 
 
 //starts the server

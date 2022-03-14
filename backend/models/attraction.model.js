@@ -20,8 +20,6 @@ const attractionSchema = new Schema({
 
 
 
-
-
 const Attraction = mongoose.model('Attraction', attractionSchema);
 
 module.exports = Attraction;
