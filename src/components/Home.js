@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+import heroVideo from '../videos/cincinnati.mp4'
+
+
 const Home = () => {
   return (
 
@@ -8,6 +11,11 @@ const Home = () => {
 
 
     <div  className='center'> 
+    <header>
+      <video id="hero-video" autoplay loop>
+        <source src={heroVideo} type="video/mp4" />
+      </video>
+    </header>
       <img id='hero-image' src='https://via.placeholder.com/1500x400' />
       </div>
 
@@ -15,11 +23,11 @@ const Home = () => {
  
       <div class="container">
     <div class="image">
-      <img class="small-image" src="https://via.placeholder.com/400"/>
+      <img class="small-image" src="https://www.jaredweberphotography.com/images/xl/cincinnati-ohio-skyline-at-night.jpg"/>
     </div>
     <div class="a-paragraph">
     <blockquote>
-      <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam provident praesentium, illum saepe ea odio at adipisci similique ipsum, omnis, ipsam iste odit repellat nostrum.</h3>
+      <h3 >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam provident praesentium, illum saepe ea odio at adipisci similique ipsum, omnis, ipsam iste odit repellat nostrum.</h3>
       </blockquote>
     </div>
   </div>
@@ -28,10 +36,10 @@ const Home = () => {
   </div>
 
          <div id='header-before-attractions' className='center'> 
-            <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <h3 className='black-text'> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
          </div>
          <div>  
-            <h1 id='attractions-title' className='center' >Attractions</h1>
+            <h1 id='attractions-title' className='center black-text' >Attractions</h1>
          </div>
          <div className='card-group'>
          <div className="card">
