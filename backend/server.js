@@ -27,7 +27,7 @@ connection.once('open', () => {
 const attractionsRouter = require('./routes/attraction');
 
 //middleware
-app.use('/attractions', attractionRouter);
+app.use('/attractions', attractionsRouter);
 
 
 //starts the server
