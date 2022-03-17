@@ -23,20 +23,12 @@ connection.once('open', () => {
 
 })
 
-<<<<<<< HEAD
-const attractionRouter = require('./routes/attraction');
-const contactRouter = require('./routes/contact');
-
-app.use('/attractions', attractionRouter)
-app.use('/contact', contactRouter)
-=======
 //loads the routers from other files
 const attractionsRouter = require('./routes/attraction');
 
 //middleware
 app.use('/attractions', attractionsRouter);
 
->>>>>>> 2a82b031c969784aeb8eaba8f04133afb9bec13b
 
 //starts the server
 app.listen(port, () => {
