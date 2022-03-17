@@ -69,11 +69,7 @@ footer {
  float: left;
 }
 
-.container {
- display: flex;
- align-items: center;
- justify-content: center;
-}
+
 
 .container-1 {
  display: flex;
@@ -139,15 +135,7 @@ footer {
   grid-row: 1 / -1;
 }
 
-.hero-image-box::after {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 
 .hero-text-box {
   grid-row: 1 / -1;
