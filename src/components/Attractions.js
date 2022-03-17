@@ -9,7 +9,7 @@ import slideshow2 from '../images/paul-brown.jpg'
 import slideshow3 from '../images/otr.jpg'
 
 
-const Attractions = (props) => {
+const AttractionsMain = (props) => {
 
 
   return (

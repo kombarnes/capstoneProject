@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import Attractions from './components/Attractions';
+import AttractionsMain from './components/Attractions';
 import Food from './components/Food';
 import Arts from './components/Arts';
 import Sports from './components/Sports';
@@ -26,7 +26,7 @@ class App extends Component {
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
-            <Route path='/attractions' component={Attractions} />
+            <Route path='/attractions' component={AttractionsMain} />
             <Route path='/food' component={Food} />
             <Route path='/arts' component={Arts} />
             <Route path='/sports' component={Sports} />
