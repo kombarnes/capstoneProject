@@ -36,7 +36,7 @@ const Arts = () => {
         <div>
             <ScrollToTop smooth />
         </div>
-        <div className='attraction-header' id='title-padding'>
+        <div className='attraction-header' id='arts-header'>
             <h1>Arts & Music</h1>
         </div>
         <div className="box">

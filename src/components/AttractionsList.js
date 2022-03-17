@@ -26,21 +26,4 @@ export default class AttractionsList extends Component {
             attractions: this.state.attractions.filter(el => el._id !== id)
         })
     }
-
-    render() {
-        return (
-            <>
-                <div>
-                    <h1>Your Attraction</h1>
-                </div>
-                <div className='card container'>
-                   <img className='card-img-top' src="" alt="" /> 
-                   <div className="card-body">
-                       <h4 className="card-title">Name</h4>
-                   </div>
-                </div>
-            </>
-
-        )
-    }
 }

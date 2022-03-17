@@ -37,7 +37,7 @@ const Theme = () => {
         <div>
             <ScrollToTop smooth />
         </div>
-        <div className='attraction-header' id='title-padding'>
+        <div className='attraction-header' id='theme-header'>
             <h1>Amusements & Theme Parks</h1>
         </div>
         <div className="box">
