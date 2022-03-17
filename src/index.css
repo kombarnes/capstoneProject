@@ -64,6 +64,12 @@ footer {
  justify-content: center;
 }
 
+.container-1 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
 .small-image {
  max-height: 400px;
  max-width: 400px;
@@ -112,4 +118,39 @@ footer {
 
  padding: 20px;
  margin-bottom: 40px;
+}
+
+.hero-image-box {
+  height: 100vh;
+  max-width: 100%;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.hero-image-box::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-text-box {
+  grid-row: 1 / -1;
+  grid-column: 1 /-1;
+  align-self: center;
+  padding: 1rem;
+  z-index: 10;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
 }
