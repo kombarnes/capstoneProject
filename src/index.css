@@ -69,7 +69,9 @@ footer {
  float: left;
 }
 
-.container {
+
+
+.container-1 {
  display: flex;
  align-items: center;
  justify-content: center;
@@ -123,4 +125,31 @@ footer {
 
  padding: 20px;
  margin-bottom: 40px;
+}
+
+.hero-image-box {
+  height: 100vh;
+  max-width: 100%;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+
+
+.hero-text-box {
+  grid-row: 1 / -1;
+  grid-column: 1 /-1;
+  align-self: center;
+  padding: 1rem;
+  z-index: 10;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
 }
