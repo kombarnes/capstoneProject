@@ -21,6 +21,16 @@ footer {
   width: 100%;
 }
 
+#heading{
+  background-image: url(./images/header-image.jpg);
+  max-width: 100%;
+  background-size: 100%  cover;
+  background-repeat: no-repeat;
+  height: 160px;
+  background-position: center;
+  background-color: rgb(255, 255, 255);
+}
+
 .contact-image{
   min-width: 1300px;
   max-height: 350px;
@@ -38,8 +48,8 @@ footer {
 
 .margin-icon{
   margin-top: 50px;
+  text-align: center;
 }
-
-.contact-center{
- text-align: center;
+.padding-con-icon{
+  padding: 2px;
 }

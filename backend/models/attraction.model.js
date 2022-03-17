@@ -3,24 +3,6 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 
-// const locationSchema = new Schema({
-//     location: {
-//         type: String
-//     },
-//     address: {
-//         type: String
-//         },
-//     city: {
-//         type: String
-//     },
-//     state: {
-//         type: String
-//     },
-//     zipcode: {
-//         type: String
-//     }
-    
-// });
 const attractionSchema = new Schema({
         name: {
           type:  String
@@ -31,15 +13,10 @@ const attractionSchema = new Schema({
         description: {
            type: String
         },
-        // location:{
-        //     type: locationSchema
-        // } 
-
-    
 });
 
 
 
-const Attraction = mongoose.model('Attraction', attractionSchema);
+const Attraction = mongoose.model('Attraction', attractionSchema, 'attractions');
 
 module.exports = Attraction;

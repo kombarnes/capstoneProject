@@ -24,8 +24,10 @@ connection.once('open', () => {
 })
 
 const attractionRouter = require('./routes/attraction');
+const contactRouter = require('./routes/contact');
 
 app.use('/attractions', attractionRouter)
+app.use('/contact', contactRouter)
 
 //starts the server
 app.listen(port, () => {
