@@ -32,7 +32,7 @@ const Sports = () => {
         <div>
             <ScrollToTop smooth />
         </div>
-        <div className='attraction-header' id='title-padding'>
+        <div className='attraction-header' id='sports-header'>
             <h1>Sports</h1>
         </div>
         <div className="box">

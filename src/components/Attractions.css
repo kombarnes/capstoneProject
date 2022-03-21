@@ -2,3 +2,161 @@
 .intro{
     color: black;
 }
+
+#attraction-titles{
+    display: flex;
+    justify-content: space-around;
+}
+
+#visit-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url('https://images.fineartamerica.com/images-medium-large-5/cincinnati-skyline-from-top-of-roebling-adam-jones.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+}
+
+#visit-header h1{
+    font-size: 60pt;
+}
+
+#visit-header h5{
+    font-size: 18pt;
+}
+#arts-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url('https://cincinnatiusa.com/sites/default/files/styles/article_full/public/JamesBrown%20Mural_Edited.jpg?itok=UX8dRsvp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+}
+
+#arts-header h1{
+    font-size: 60pt;
+}
+
+#arts-header h5{
+    font-size: 18pt;
+}
+#food-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url('https://foodanddine.com/wp-content/uploads/2021/02/Agave-and-Rye-birria-grilled-street-tacos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+}
+
+#food-header h1{
+    font-size: 60pt;
+}
+
+#food-header h5{
+    font-size: 18pt;
+}
+#night-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url('https://i0.wp.com/moversmakers.org/wp-content/uploads/2019/05/FEAT-summer-outdoor-salsa-on-the-square2.jpg?fit=500%2C335&ssl=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+}
+
+#night-header h1{
+    font-size: 60pt;
+}
+
+#sports-header h5{
+    font-size: 18pt;
+}
+#sports-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url('https://low6.com/wp-content/uploads/2021/10/Cincinnati-Bengals-scaled.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+}
+
+#sports-header h1{
+    font-size: 60pt;
+}
+
+#sports-header h5{
+    font-size: 18pt;
+}
+
+#theme-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url('https://gray-wtap-prod.cdn.arcpublishing.com/resizer/7BDEOgirvfCjSb3kpkus9Uumz0Q=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/ZVLW7O72XZGBZCGOA2APSD2E3U.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+}
+
+#theme-header h1{
+    font-size: 60pt;
+}
+
+#theme-header h5{
+    font-size: 18pt;
+}
+

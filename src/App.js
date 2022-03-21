@@ -38,6 +38,7 @@ class App extends Component {
             <Route path='/nightlife' component={Night} />
             <Route path='/addattraction' component={AddAttraction} />
             <Route path='/attractionslist' component={AttractionsList} />
+            <Route path='/carousel' component={AttractionsList} />
           </Switch>
           <Footer />
         </div>

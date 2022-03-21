@@ -39,7 +39,7 @@ const Night = () => {
         <div>
             <ScrollToTop smooth />
         </div>
-        <div className='attraction-header' id='title-padding'>
+        <div className='attraction-header' id='night-header'>
             <h1>Night Life</h1>
         </div>
         <div className="box">
