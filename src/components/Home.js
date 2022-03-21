@@ -11,19 +11,8 @@ const Home = () => {
 
 
     <div  className='center'> 
-    <header>
-        <section className="hero-image-box">
-        <img src="https://www.jaredweberphotography.com/images/xl/cincinnati-ohio-skyline-at-night.jpg" alt="" />
-          <video src="">
-            <source />
-          </video>
-        </section>
-        <section className="hero-text-box">
-          <h1 className="hero-heading">Placeholder</h1>
-          <p className="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, fuga?</p>
-        </section>
-    </header>
-      <img id='hero-image' src='https://via.placeholder.com/1500x400' />
+
+      <img id='hero-image' src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Downtown_Cincinnati_viewed_from_Devou_Park_Cropped.jpg/1000px-Downtown_Cincinnati_viewed_from_Devou_Park_Cropped.jpg' />
       </div>
 
       <h4 id='title-padding' className="center">HISTORY OF CINCINNATI</h4>
