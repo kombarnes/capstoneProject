@@ -21,6 +21,16 @@ footer {
   width: 100%;
 }
 
+#heading{
+  background-image: url(./images/header-image.jpg);
+  max-width: 100%;
+  background-size: 100%  cover;
+  background-repeat: no-repeat;
+  height: 160px;
+  background-position: center;
+  background-color: rgb(255, 255, 255);
+}
+
 .contact-image{
   min-width: 1300px;
   max-height: 350px;
@@ -38,6 +48,11 @@ footer {
 
 .margin-icon{
   margin-top: 50px;
+  text-align: center;
+}
+
+.padding-con-icon{
+  padding: 2px;
 }
 
 .contact-center{
@@ -58,7 +73,9 @@ footer {
  float: left;
 }
 
-.container {
+
+
+.container-1 {
  display: flex;
  align-items: center;
  justify-content: center;
@@ -112,4 +129,31 @@ footer {
 
  padding: 20px;
  margin-bottom: 40px;
+}
+
+.hero-image-box {
+  height: 100vh;
+  max-width: 100%;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+
+
+.hero-text-box {
+  grid-row: 1 / -1;
+  grid-column: 1 /-1;
+  align-self: center;
+  padding: 1rem;
+  z-index: 10;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
 }

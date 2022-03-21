@@ -12,16 +12,23 @@ const Home = () => {
 
     <div  className='center'> 
     <header>
-      <video id="hero-video" autoplay loop>
-        <source src={heroVideo} type="video/mp4" />
-      </video>
+        <section className="hero-image-box">
+        <img src="https://www.jaredweberphotography.com/images/xl/cincinnati-ohio-skyline-at-night.jpg" alt="" />
+          <video src="">
+            <source />
+          </video>
+        </section>
+        <section className="hero-text-box">
+          <h1 className="hero-heading">Placeholder</h1>
+          <p className="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, fuga?</p>
+        </section>
     </header>
       <img id='hero-image' src='https://via.placeholder.com/1500x400' />
       </div>
 
       <h4 id='title-padding' className="center">HISTORY OF CINCINNATI</h4>
  
-      <div class="container">
+      <div class="container-1">
     <div class="image">
       <img class="small-image" src="https://www.jaredweberphotography.com/images/xl/cincinnati-ohio-skyline-at-night.jpg"/>
     </div>
