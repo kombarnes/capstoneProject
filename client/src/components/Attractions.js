@@ -4,6 +4,7 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Attractions.css'
 import ScrollToTop from 'react-scroll-to-top';
+import { BACKEND_URL } from '../config';
 
 // const linkStyle = {
 //   textDecoration: 'none',
@@ -52,7 +53,7 @@ export default class Attractions extends Component {
     }
   }
   componentDidMount() {
-    axios.get('http://localhost:5000/' + "Attractions/")
+    axios.get(BACKEND_URL + "attractions/")
       .then(response => {
         this.setState({
           attractions: response.data,
