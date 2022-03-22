@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import heroVideo from '../videos/cincinnati.mp4'
 
 
