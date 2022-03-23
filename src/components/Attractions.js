@@ -75,12 +75,10 @@ export default class Attractions extends Component {
     return (
       this.state.loading === false ? (
         <div>
-        <div>
             <ScrollToTop smooth />
-        </div>
           <div id='visit-header'>
           <img src="https://m.psecn.photoshelter.com/img-get2/I0000WcZZ84jrmoo/fit=1000x750/DSC02947-Cincinnati-Skyline-Night-Panorama-Photo.jpg" id='visit-main-img' alt="" />
-          <div id='attraction-center'>
+          <div id='visit-center'>
             <h1>Visit Cincinnati</h1>
             <h5>Are you on a family vacation? Maybe you just need time to get away. Our city has options for everyone! How would YOU like to plan your trip?</h5>
           </div>

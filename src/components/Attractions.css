@@ -1,16 +1,12 @@
-
-.intro{
-    color: black;
-}
-
 #visit-header{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    /* height: 400px; */
     overflow: hidden;
     
 }
@@ -47,21 +43,28 @@
     transform: translate(-50%, -50%);
   }
 
+  #visit-center {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   #attraction-center h3{
       font-size: 50pt;
       color: white;
   }
   
-  #attraction-main-img { 
+#attraction-main-img { 
     filter: brightness(70%);
     border-radius: 20px;
     transition: transform .2s; /* Animation */
     margin: 10px;
     width: 500px;
     height: 400px;
-  }
+}
 
-  #new-attraction-img{
+#new-attraction-img{
       width: 75%;
       height: 400px;
 }
