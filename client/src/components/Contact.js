@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import ContactCinci from '../images/smale-park.png';
 import axios from 'axios';
+import { BACKEND_URL } from '../config';
 
 
 class Contact extends Component {
@@ -48,7 +49,7 @@ class Contact extends Component {
 
       console.log(contact);
 
-      axios.post('http://localhost:5000/contact/add', contact)
+      axios.post(BACKEND_URL + 'contact/')
       .then(res => console.log(res.data));
 
       this.setState({

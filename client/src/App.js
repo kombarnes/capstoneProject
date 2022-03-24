@@ -32,7 +32,7 @@ class App extends Component {
             <Route path='/contact' component={Contact} />
             <Route path='/attractions' component={Attractions} />
             <Route path='/foods' component={Food} />
-            <Route path='/artspage' component={Arts} />
+            <Route path='/arts' component={Arts} />
             <Route path='/sports' component={Sports} />
             <Route path='/themeparks' component={Theme} />
             <Route path='/nightlife' component={Night} />
