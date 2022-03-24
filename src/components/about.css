@@ -3,12 +3,14 @@
     border-radius: 50px;
     display: inline;
     border: 15px solid black;
+   
 }
 .img3, .img4 {
     height: 290px;
     border-radius: 50px;
     display: inline;
     border: 15px solid black;
+ 
 }
 
 .info {
@@ -25,3 +27,11 @@
 .img {
     margin-right: 60px;
 }
+
+.jumbo {
+    margin-left: 65px;
+    
+}
+
+
+
