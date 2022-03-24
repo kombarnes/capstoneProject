@@ -3,7 +3,7 @@ import "./about.css"
 const About = () => {
   return (
     <div>
-      <h1 className="center">:crown:The Queen City which is Cincinnati:crown:</h1>
+      <h1 className="center">&#128081;The Queen City which is Cincinnati&#128081;</h1>
       <img className="jumbo" src="https://www.tpl.org/sites/default/files/8_2021_Cincinnati-Ohio_header.jpg" alt="" />
       <div className="container">
         <div className="row">
@@ -16,7 +16,7 @@ const About = () => {
               <div className="modal-dialog">
                 <div className="modal-content">
                   <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalLabel1">Birth :construction_worker:</h5>
+                    <h5 className="modal-title" id="exampleModalLabel1">Birth &#128119;</h5>
                     <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -39,7 +39,7 @@ const About = () => {
               <div className="modal-dialog">
                 <div className="modal-content">
                   <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalLabel">The Queen :princess:</h5>
+                    <h5 className="modal-title" id="exampleModalLabel">The Queen &#128120;</h5>
                     <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -62,7 +62,7 @@ const About = () => {
               <div className="modal-dialog">
                 <div className="modal-content">
                   <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalLabel3">Underground railroad :mostly_sunny:</h5>
+                    <h5 className="modal-title" id="exampleModalLabel3">Underground railroad &#127780;</h5>
                     <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -85,7 +85,7 @@ const About = () => {
               <div className="modal-dialog">
                 <div className="modal-content">
                   <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalLabel4">Freezer Bowl :tiger2:</h5>
+                    <h5 className="modal-title" id="exampleModalLabel4">Freezer Bowl &#128005;</h5>
                     <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
