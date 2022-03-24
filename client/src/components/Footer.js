@@ -46,10 +46,10 @@ const Footer = () => {
           <div className="col l4 offset-l2 s12">
             <h5 className="white-text">Links</h5>
             <ul>
-              <li><a className="grey-text text-lighten-3" href="/">Home</a></li>
-              <li><a className="grey-text text-lighten-3" href="/about">About</a></li>
-              <li><a className="grey-text text-lighten-3" href="/contact">Contact</a></li>
-              <li><a className="grey-text text-lighten-3" href="/attractions">Attractions</a></li>
+              <li><Link className="grey-text text-lighten-3" to="/">Home</Link></li>
+              <li><Link className="grey-text text-lighten-3" to="/about">About</Link></li>
+              <li><Link className="grey-text text-lighten-3" to="/contact">Contact</Link></li>
+              <li><Link className="grey-text text-lighten-3" to="/attractions">Attractions</Link></li>
             </ul>
           </div>
         </div>
