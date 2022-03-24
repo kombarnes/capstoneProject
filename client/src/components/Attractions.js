@@ -6,11 +6,6 @@ import './Attractions.css'
 import ScrollToTop from 'react-scroll-to-top';
 import { BACKEND_URL } from '../config';
 
-// const linkStyle = {
-//   textDecoration: 'none',
-//   color: 'white',
-// }
-
 
 const Attraction = (props) => {
   // display each attraction in a card or some styling, similar to the pet store 
@@ -92,7 +87,7 @@ export default class Attractions extends Component {
           <div className="container" id='visit-attractions'>
 
             <div id='attraction-container'>
-              <Link to='/food' ><img src="https://ohiotimesnewsimages.s3.amazonaws.com/wp-content/uploads/2021/10/22081827/98040cb9-3e18-45cf-8f0c-0f6f99d8aa4b-Burger_2.jpg" alt="food-image" id='attraction-main-img' /></Link>
+              <Link to='/foods' ><img src="https://ohiotimesnewsimages.s3.amazonaws.com/wp-content/uploads/2021/10/22081827/98040cb9-3e18-45cf-8f0c-0f6f99d8aa4b-Burger_2.jpg" alt="food-image" id='attraction-main-img' /></Link>
               <div id='attraction-center' ><h3>Food & Drinks</h3></div>
             </div>
 

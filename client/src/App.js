@@ -31,8 +31,8 @@ class App extends Component {
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
             <Route path='/attractions' component={Attractions} />
-            <Route path='/food' component={Food} />
-            <Route path='/arts' component={Arts} />
+            <Route path='/foods' component={Food} />
+            <Route path='/artspage' component={Arts} />
             <Route path='/sports' component={Sports} />
             <Route path='/themeparks' component={Theme} />
             <Route path='/nightlife' component={Night} />

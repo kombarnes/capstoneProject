@@ -25,9 +25,13 @@ connection.once('open', () => {
 
 //loads the routers from other files
 const attractionsRouter = require('./routes/attraction');
+const artsRouter = require('./routes/art');  
+const foodsRouter = require('./routes/food');  
 
 //middleware
 app.use('/attractions', attractionsRouter);
+app.use('/art', artsRouter);  
+app.use('/foods', foodsRouter);
 
 
 //starts the server
