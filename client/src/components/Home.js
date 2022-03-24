@@ -76,7 +76,7 @@ const Home = () => {
            </Link>
            <div className="card-body">
              <h5 className="card-title">Amusement Parks</h5>
-             <p className="card-text">Looking for a thrill? Check out Cincinnati's famous amusement parks!</p>
+             <p className="card-text">Looking for fun? Check out Cincinnati's amusement & theme parks!</p>
            </div>
          </div>
          <div className="card">
