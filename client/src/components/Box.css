@@ -1,0 +1,11 @@
+.box{
+    margin: 20px;
+}
+
+.grid{
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
