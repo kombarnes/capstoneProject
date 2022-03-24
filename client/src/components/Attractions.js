@@ -121,10 +121,6 @@ export default class Attractions extends Component {
 
           </div>
 
-          <div className="add-attraction">
-            <h1>Add a New Attraction</h1>
-          </div>
-
           <br />
 
           {this.attractionList()}

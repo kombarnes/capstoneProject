@@ -10,7 +10,7 @@ const Art = (props) => {
     return (
         <div>
           <Card style={{ width: '40rem' }}>
-            <Card.Img variant="top" src={props.art.image} />
+            <Card.Img variant="top" src={props.art.image} className='card-images'/>
             <Card.Body>
                 <Card.Title>{props.art.title}</Card.Title>
                 <Card.Text>
@@ -55,14 +55,23 @@ artList(){
 render() {
     return (
       this.state.loading === false ? (
-        <div className='d-flex flex-wrap'>
-            <ScrollToTop smooth />
+        <>
+        <div id='visit-header'>
+      <img src="https://m.psecn.photoshelter.com/img-get2/I0000WcZZ84jrmoo/fit=1000x750/DSC02947-Cincinnati-Skyline-Night-Panorama-Photo.jpg" id='visit-main-img' alt="" />
+      <div id='visit-center'>
+        <h1>Arts & Music</h1>
+      </div>
+        
+      </div>
+        <div className='d-flex flex-wrap justify-content-around'>
+        <ScrollToTop smooth />
+        
           {this.artList()}
           <div className='center'>
             <button className='btn'><Link to='/attractions'>Go Back to Attractions</Link></button>
         </div>
         </div>
-        
+       </> 
 
 
       ) : (

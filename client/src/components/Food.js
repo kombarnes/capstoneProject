@@ -10,7 +10,7 @@ const Food = (props) => {
     return (
         <div>
           <Card style={{ width: '40rem'}}>
-            <Card.Img variant="top" src={props.food.image} />
+            <Card.Img variant="top" src={props.food.image} className='card-images'/>
             <Card.Body>
                 <Card.Title>{props.food.title}</Card.Title>
                 <Card.Text>
@@ -55,24 +55,25 @@ foodList(){
 render() {
     return (
       this.state.loading === false ? (
-        
-        <div className='d-flex flex-wrap justify-content-around'>
-            <ScrollToTop smooth />
-            <div id='visit-header'>
+
+        <>
+        <div id='visit-header'>
           <img src="https://m.psecn.photoshelter.com/img-get2/I0000WcZZ84jrmoo/fit=1000x750/DSC02947-Cincinnati-Skyline-Night-Panorama-Photo.jpg" id='visit-main-img' alt="" />
           <div id='visit-center'>
-            <h1>Visit Cincinnati</h1>
-            <h5>Are you on a family vacation? Maybe you just need time to get away. Our city has options for everyone! How would YOU like to plan your trip?</h5>
+            <h1>Food & Drinks</h1>
           </div>
             
           </div>
+        <div className='d-flex flex-wrap justify-content-around'>
+            <ScrollToTop smooth />
+            
 
           {this.foodList()}
           <div className='center'>
             <button className='btn'><Link to='/attractions'>Go Back to Attractions</Link></button>
         </div>
         </div>
-        
+        </>
 
 
       ) : (

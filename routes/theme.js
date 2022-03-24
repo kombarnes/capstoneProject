@@ -2,7 +2,7 @@ const router = require('express').Router();
 let Theme = require('../models/theme.model');
 
 router.route('/').get((req, res) => {
-    Sport.find()
+    Theme.find()
     .then(themes => res.json(themes))
     .catch(err => res.status(400).json('Error: ' + err));
 });
