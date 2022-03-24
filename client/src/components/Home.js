@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import heroVideo from '../videos/cincinnati.mp4'
 
@@ -23,16 +24,17 @@ const Home = () => {
     </div>
     <div class="a-paragraph">
     <blockquote>
-      <h3 >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam provident praesentium, illum saepe ea odio at adipisci similique ipsum, omnis, ipsam iste odit repellat nostrum.</h3>
+      <h3 >From modest beginnings, Cincinnati came to be known as the "Queen City of the West.”
+</h3>
       </blockquote>
     </div>
   </div>
   <div>
-    <p id='history-paragraph'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis tenetur, deserunt neque blanditiis expedita eius explicabo omnis quo sunt suscipit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore amet facilis at aliquid laudantium repellendus quae nostrum qui, tenetur nam optio ullam fugit itaque dolores doloribus atque ad debitis necessitatibus. Soluta suscipit odit ad labore est harum repudiandae, optio excepturi ratione cumque minus, commodi sapiente dolores quaerat perspiciatis officiis quod! Corrupti, nostrum at animi nihil beatae laudantium sunt voluptas laborum ut nam. Quam corrupti nesciunt facilis cumque quas qui consequuntur.</p>
+    <p id='history-paragraph'>Cincinnati, Ohio, U.S. Situated on the Ohio River across from Kentucky, it was first settled in 1788; the area was renamed in 1790 to honour the Society of the Cincinnati. A river port after 1811, it grew in importance with the opening of the Miami and Erie Canal in 1832. Its manufactures include transportation equipment and building materials, and it is a major inland coal port. A cultural centre, it has an orchestra, opera and ballet companies, and several notable museums. It is the seat of the University of Cincinnati, the birthplace of William Howard Taft, and the site of the Harriet Beecher Stowe House, where she lived briefly and frequently visited her family during her tenure in the city.</p>
   </div>
 
          <div id='header-before-attractions' className='center'> 
-            <h3 className='black-text'> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <h3 className='black-text'> Now that you've learned a little about our history, take a look at the fascinating sights that Cincinnati has to offer.</h3>
          </div>
          <div>  
             <h1 id='attractions-title' className='center black-text' >Attractions</h1>
@@ -44,7 +46,7 @@ const Home = () => {
            </Link>
            <div className="card-body">
              <h5 className="card-title">Food & Drink</h5>
-             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+             <p className="card-text">Feeling hungry? Here are a few places to check out.</p>
            </div>
          </div>
          <div className="card">
@@ -54,7 +56,7 @@ const Home = () => {
            </a>
            <div className="card-body">
              <h5 className="card-title">Arts & Music</h5>
-             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+             <p className="card-text"> Take a look at the creative side of Cincinnati. </p>
            </div>
          </div>
          <div className="card">
@@ -64,7 +66,7 @@ const Home = () => {
            </Link>
            <div className="card-body">
              <h5 className="card-title ">Sports</h5>
-             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+             <p className="card-text">Home to three major teams, Cincinnati has lots to offer when it comes to sports</p>
            </div>
          </div>
          <div className="card">
@@ -74,7 +76,7 @@ const Home = () => {
            </Link>
            <div className="card-body">
              <h5 className="card-title">Amusement Parks</h5>
-             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+             <p className="card-text">Looking for a thrill? Check out Cincinnati's famous amusement parks!</p>
            </div>
          </div>
          <div className="card">
@@ -84,7 +86,7 @@ const Home = () => {
            </Link>
            <div className="card-body">
              <h5 className="card-title">Night Life</h5>
-             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+             <p className="card-text"> By night, the party is only beginning. Take a look at the night life hotspots of Cincinnati.</p>
            </div>
          </div>
 
