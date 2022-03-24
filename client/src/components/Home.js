@@ -50,10 +50,10 @@ const Home = () => {
            </div>
          </div>
          <div className="card">
-         <a href="/arts">
+         <Link to="/arts">
 
            <img className='card-img-top' src="https://www.cincymuseum.org/wp-content/uploads/2020/05/UT-1.jpg" alt="Card image cap" />
-           </a>
+           </Link>
            <div className="card-body">
              <h5 className="card-title">Arts & Music</h5>
              <p className="card-text"> Take a look at the creative side of Cincinnati. </p>
