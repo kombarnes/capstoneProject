@@ -1,55 +1,83 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 import { Card, Button } from 'react-bootstrap';
 import './Box.css';
 import ScrollToTop from 'react-scroll-to-top';
+import { BACKEND_URL } from '../config';
 
-const Sports = () => {
-    const cardInfo = [
-        {image: 'https://www.stadiumsofprofootball.com/wp-content/uploads/2016/07/paul16_top.jpg', title: 'Paul Brown Stadium', text: '1 Paul Brown Stadium Cincinnati, OH 45202', link: 'https://www.bengals.com/stadium/'},
-        {image: 'https://www.sportsvideo.org/new/wp-content/uploads/2021/04/TQL-Stadium-featured.jpg', title: 'TQL Stadium', text: '1501 Central Pkwy Cincinnati, OH 45214', link: 'https://tqlstadium.com/'},
-        {image: 'https://thisgreatgame.com/wp-content/uploads/2020/07/gabp-main.jpg', title: 'Great American Ballpark', text: '100 Joe Nuxhall Way Cincinnati, OH 45202', link: 'https://www.mlb.com/reds/ballpark'},
-        {image: 'https://i0.wp.com/www.sportstravelmagazine.com/wp-content/uploads/2019/11/CincinnatiArena.jpg?fit=770%2C513&ssl=1&w=640', title: 'Heritage Bank Center', text: '100 Broadway St Cincinnati, OH 45202', link: 'https://heritagebankcenter.com/'},
-        // {image: '', title: '', text: 'description text', link: ''},
-    ];
-
-    const renderCard = (card, index) =>{
-        return(
-            <Card style={{ width: '40rem' }} key={index}>
-                <Card.Img variant="top" src={card.image} />
-                <Card.Body>
-                    <Card.Title>{card.title}</Card.Title>
-                    <Card.Text>
-                        {card.text}
-                    </Card.Text>
-                    <Button variant="primary" href={card.link} target='_blank'>Visit</Button>
-                </Card.Body>
-            </Card>
-        )
-    }
-
+const Sport = (props) => {
     return (
-        <>
         <div>
-            <ScrollToTop smooth />
+          <Card style={{ width: '40rem'}}>
+            <Card.Img variant="top" src={props.sport.image} />
+            <Card.Body>
+                <Card.Title>{props.sport.title}</Card.Title>
+                <Card.Text>
+                    {props.sport.text}
+                </Card.Text>
+             <a href={props.sport.link}>   <Button variant="primary">Go somewhere </Button></a>
+            </Card.Body>
+        </Card>  
         </div>
-        <div id='visit-header'>
-        <img src="https://low6.com/wp-content/uploads/2021/10/Cincinnati-Bengals-scaled.jpg" id='visit-main-img' alt="" />
-        <div id='attraction-center'>
-            <h1>Sports</h1>
-        </div>
-            
-        </div>
-        <div className="box">
-            <div className='grid'>{cardInfo.map(renderCard)}</div>  
-        </div>
-          
-        <div className='center'>
-            <button className='btn'><a href="/attractions">Go Back to Attractions</a></button>
-        </div>
-        </>
         
     )
-};
+}
+
+export default class Sports extends Component {
+    constructor(props){
+        super(props) 
+        this.state = {
+            sports: [],
+            loading: true
+          }
+    }
+    componentDidMount() {
+        axios.get(BACKEND_URL + "sports/")
+          .then(response => {
+            this.setState({
+              sports: response.data,
+              loading: false
+            })
+            console.log('heres the list of sports attractions')
+          })
+          .catch((error) => {
+            console.log(error)
+          })
+}
+
+sportList(){
+    return this.state.sports.map((currentSport) => {
+        return <Sport sport={currentSport} key={currentSport._id}/>
+    })
+}
+
+render() {
+    return (
+      this.state.loading === false ? (
+        
+        <div className='d-flex flex-wrap justify-content-around'>
+            <ScrollToTop smooth />
+            <div id='visit-header'>
+          <img src="https://m.psecn.photoshelter.com/img-get2/I0000WcZZ84jrmoo/fit=1000x750/DSC02947-Cincinnati-Skyline-Night-Panorama-Photo.jpg" id='visit-main-img' alt="" />
+          <div id='visit-center'>
+            <h1>Visit Cincinnati</h1>
+            <h5>Are you on a family vacation? Maybe you just need time to get away. Our city has options for everyone! How would YOU like to plan your trip?</h5>
+          </div>
+            
+          </div>
+
+          {this.sportList()}
+          <div className='center'>
+            <button className='btn'><Link to='/attractions'>Go Back to Attractions</Link></button>
+        </div>
+        </div>
+        
 
 
-export default Sports
+      ) : (
+        <div className="">loading....</div>
+      )
+    )
+  }
+}

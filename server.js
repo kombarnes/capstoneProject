@@ -30,14 +30,16 @@ const contactRouter = require('./routes/contact');
 const nightRouter = require('./routes/night');
 const sportRouter = require('./routes/sport')
 const themeRouter = require('./routes/theme')
+const foodRouter = require('./routes/food')
 
 //middleware
 app.use('/attractions', attractionsRouter);
 app.use('/art', artRouter);
 app.use('/contact', contactRouter);
 app.use('/night', nightRouter);
-app.use('/sport', sportRouter);
-app.use('/theme', themeRouter)
+app.use('/sports', sportRouter);
+app.use('/theme', themeRouter);
+app.use('/foods', foodRouter);
 
 //starts the server
 app.listen(port, () => {

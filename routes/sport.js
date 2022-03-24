@@ -3,7 +3,7 @@ let Sport = require('../models/sport.model');
 
 router.route('/').get((req, res) => {
     Sport.find()
-    .then(nights => res.json(sports))
+    .then(sports => res.json(sports))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 router.route('/add').post((req, res) => {
